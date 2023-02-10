@@ -1,0 +1,16 @@
+version: "3"
+services:
+  
+  scn-postgres:
+    image: "postgres:9.6-alpine"
+    container_name: pmfm-postgres
+    environment:
+      - POSTGRES_DB=project-management-nextjs-fm
+      - POSTGRES_USER=pmfmuser
+      - POSTGRES_PASSWORD=pmfmpass
+    expose:
+      - "5433"
+    ports:
+      - "5433:5433"
+    command: -p 5433
+
