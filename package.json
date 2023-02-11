@@ -10,6 +10,9 @@
     "db:push": "prisma db push",
     "db:seed": "prisma db seed"
   },
+  "prisma": {
+    "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
+  },
   "dependencies": {
     "@next/font": "13.1.6",
     "@prisma/client": "4.6.1",
