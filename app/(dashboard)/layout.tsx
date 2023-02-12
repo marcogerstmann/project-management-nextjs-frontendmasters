@@ -13,3 +13,5 @@ const DashboardRootLayout = ({ children }) => {
     </html>
   );
 };
+
+export default DashboardRootLayout;
